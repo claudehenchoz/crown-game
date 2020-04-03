@@ -7,33 +7,26 @@ screen stats_overlay():
         text 'IMAGE {color=#f00}[public_image]{/color}' align (0.95, 0.04)
     else:
         text 'IMAGE [public_image]' align (0.95, 0.04)
-
     if finances > 0:
         text 'FINANCES {color=#0f0}[finances]{/color}' align (0.95, 0.08)
     elif finances < 0:
         text 'FINANCES {color=#f00}[finances]{/color}' align (0.95, 0.08)
     else:
         text 'FINANCES [finances]' align (0.95, 0.08)
-
-
     if public_health > 0:
         text 'HEALTH {color=#0f0}[public_health]{/color}' align (0.95, 0.12)
     elif public_health < 0:
         text 'HEALTH {color=#f00}[public_health]{/color}' align (0.95, 0.12)
     else:
         text 'HEALTH [public_health]' align (0.95, 0.12)
-
-
     if karma > 0:
         text 'KARMA {color=#0f0}[karma]{/color}' align (0.95, 0.16)
     elif karma < 0:
         text 'KARMA {color=#f00}[karma]{/color}' align (0.95, 0.16)
     else:
         text 'KARMA [karma]' align (0.95, 0.16)
-
 init python:
     config.overlay_screens.append('stats_overlay')
-
 
 
 # The game starts here.
