@@ -1,0 +1,38 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 73: expected statement.
+    ui.layer("dateoverlay_layer")
+                                 ^
+
+File "game/script.rpy", line 74: expected statement.
+    ui.window(background="dateoverlay", yfill=True, xfill=True)
+                                                               ^
+
+File "game/script.rpy", line 75: expected statement.
+    ui.vbox(xanchor=-485, yanchor=-3, clipping=False, spacing=12)
+                                                                 ^
+
+File "game/script.rpy", line 76: expected statement.
+    ui.text("%(period)s %(dayname)s" % globals (), font="COLLEGE.ttf", size=16, color="#380c09")
+                                                                                                ^
+
+File "game/script.rpy", line 77: expected statement.
+    ui.close()
+              ^
+
+File "game/script.rpy", line 78: expected statement.
+    ui.vbox(xanchor=-660, yanchor=-45, clipping=False)
+                                                      ^
+
+File "game/script.rpy", line 79: expected statement.
+    ui.text("%s" % (finances), size=16)
+                                       ^
+
+File "game/script.rpy", line 80: expected statement.
+    ui.close()
+              ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Fri Apr 03 23:53:19 2020

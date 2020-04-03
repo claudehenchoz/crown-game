@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 74, in script
+    $ ui.window(background="dateoverlay", yfill=True, xfill=True)
+  File "game/script.rpy", line 74, in <module>
+    $ ui.window(background="dateoverlay", yfill=True, xfill=True)
+Exception: Trying to add something to non-existent layer 'dateoverlay_layer'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 74, in script
+    $ ui.window(background="dateoverlay", yfill=True, xfill=True)
+  File "C:\Users\Claude\Downloads\Ren'Py\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Claude\Downloads\Ren'Py\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 74, in <module>
+    $ ui.window(background="dateoverlay", yfill=True, xfill=True)
+  File "C:\Users\Claude\Downloads\Ren'Py\renpy-7.3.5-sdk\renpy\ui.py", line 553, in __call__
+    stack[-1].add(atw, add_tag)
+  File "C:\Users\Claude\Downloads\Ren'Py\renpy-7.3.5-sdk\renpy\ui.py", line 115, in add
+    renpy.game.context(-1).scene_lists.add(self.name, d, key=key)
+  File "C:\Users\Claude\Downloads\Ren'Py\renpy-7.3.5-sdk\renpy\display\core.py", line 1029, in add
+    raise Exception("Trying to add something to non-existent layer '%s'." % layer)
+Exception: Trying to add something to non-existent layer 'dateoverlay_layer'.
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+CrownGame 1.0
+Fri Apr 03 23:53:54 2020
